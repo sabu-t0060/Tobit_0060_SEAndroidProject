@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".locationMenu">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@android:color/holo_red_light"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:text="Back"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lay"
+
+                >
+
+                <EditText
+                    android:id="@+id/locid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:ems="20"
+                    android:hint="Location ID"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:textSize="20dp"
+                    />
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@android:color/holo_red_light"
+                    android:shadowRadius="@android:integer/config_longAnimTime"
+                    android:text="Edit"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/locNamTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:ems="20"
+                android:hint="Location Name"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/holo_red_light"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/perDayCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:ems="20"
+                android:hint="Per Day Cost"
+
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/holo_red_light"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/hrlCostTxt"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="4"
+                android:ems="20"
+                android:hint="Hourly Cost"
+
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/holo_red_light"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/noSlotsTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:ems="20"
+                android:hint="No Of Slots"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/holo_red_light"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/nofrSlotsTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:ems="20"
+                android:hint="No Of Free Slots"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/holo_red_light"
+                android:textSize="20dp" />
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/okbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@android:color/holo_red_light"
+                    android:shadowRadius="@android:integer/config_longAnimTime"
+                    android:text="ok"
+                    android:textColor="@android:color/white" />
+                />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/addBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@android:color/holo_red_light"
+                    android:shadowRadius="@android:integer/config_longAnimTime"
+                    android:text="Add Location"
+                    android:textColor="@android:color/white" />
+                <Button
+                    android:id="@+id/editBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@android:color/holo_red_light"
+                    android:shadowRadius="@android:integer/config_longAnimTime"
+                    android:text="Edit Location"
+                    android:textColor="@android:color/white" />
+                <Button
+                    android:id="@+id/delBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@android:color/holo_red_light"
+                    android:shadowRadius="@android:integer/config_longAnimTime"
+                    android:text="Delete Button"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false"
+                android:fillViewport="true">
+
+                <TableLayout
+                    android:id="@+id/locationTbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme">
+
+                </TableLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

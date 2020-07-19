@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ParkMe!</string>
+    <string name="title_activity_login">login</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string-array name="type">
+        <item>Per Day</item>
+        <item>Hourly</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_loginmenu">loginmenu</string>
+</resources>
